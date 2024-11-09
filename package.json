@@ -1,0 +1,52 @@
+{
+  "name": "icalfilter-visual",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc",
+    "generate-migration": "drizzle-kit generate:sqlite --schema=./app/db/schema.ts"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "@heroicons/react": "^2.1.5",
+    "@libsql/client": "^0.14.0",
+    "@nponsard/ical": "^0.16.5",
+    "@reach/dialog": "^0.18.0",
+    "@remix-run/css-bundle": "^2.11.1",
+    "@remix-run/node": "^2.11.1",
+    "@remix-run/react": "^2.11.1",
+    "@remix-run/serve": "^2.11.1",
+    "add": "^2.0.6",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^9.6.0",
+    "drizzle-orm": "^0.28.6",
+    "ical-generator": "^6.0.1",
+    "isbot": "^3.8.0",
+    "nanoid": "^5.0.7",
+    "pnpm": "^9.12.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-spring": "^9.7.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.11.1",
+    "@remix-run/eslint-config": "^2.11.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
